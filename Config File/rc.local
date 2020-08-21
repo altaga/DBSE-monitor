@@ -1,0 +1,7 @@
+#!/bin/bash
+
+sleep 10
+
+sudo python3 "Torch-Drowsiness-Monitor/YoloV3/detect.py" &
+sudo python3 "Torch-Drowsiness-Monitor/Drowsiness/check.py" &
+

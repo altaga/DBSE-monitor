@@ -3,7 +3,7 @@ pip install matplotlib opencv-python paho-mqtt tqdm
 
 # Torch-Drowsiness-Monitor
 
-Drowsiness and atention monitor for driving or handling heavy machinery. Also detects objects at the blind spot via CV and the Jetson Nano. And has a crash detection feature.
+Drowsiness and attention monitor for driving or handling heavy machinery. Also detects objects at the blind spot via CV and the Jetson Nano. And has a crash detection feature.
 
 <img src="https://i.ibb.co/1MC19TG/Logo.png" width="1000">
 

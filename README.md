@@ -32,6 +32,10 @@ According to a report by the WHO (World Health Organization) (2), falling asleep
 
 <img src="https://media2.giphy.com/media/PtrhzZJhbEBm8/giphy.gif" width="1000">
 
+A su vez la NHTSA menciona que el hecho de estar enojado puede generar una conduccion mas peligrosa y agresiva (5), poniendo en peligro la vida del conductor debido a estas alteraciones psicologicas.
+
+<img src="https://i.ibb.co/YcWYJNw/tenor-1.gif" width="1000">
+
 # Solution:
 
 We will create a system that will be able to detect a person's drowsiness level, this with the aim of notifying the user about his state and if he is able to drive.
@@ -42,9 +46,13 @@ At the same time it will measure the driver’s attention or capacity to garner 
 
 Additionally it will detect small vehicles and motorcycles in the automobile’s blind spots.
 
-<img src="https://thumbsnap.com/s/Wy5w7JPR.jpg?1205" width="1000">
+<img src="https://thumbsnap.com/s/Wy5w7JPR.jpg?1205" width="600">
 
 In turn, the system will have an accelerometer to generate a call to the emergency services if the car had an accident to be able to attend the emergency quickly.
+
+Debido a que un estado psicologico alterado podria generar una posible conduccion peligrosa, cuidamos el estado de el conductor mediante el analisis de emociones de su rostro y utilizando musica que al conductor le pueda genera una respuesta positiva.
+
+<img src="https://i.ibb.co/xX4G7Yd/dondraper-car.gif" width="1000">
 
 Current Solutions:
 
@@ -128,7 +136,7 @@ https://pytorch.org/
 
 <img src="https://i.ibb.co/6RMJp5F/image.png" width="800">
 
-    conda install pytorch torchvision spyder cudatoolkit=10.1 -c pytorch
+    conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
 
 ## Support Libraries:
 
@@ -554,3 +562,5 @@ Links:
 (3) https://dmv.ny.gov/press-release/press-release-03-09-2018
 
 (4) https://www.nhtsa.gov/risky-driving/drowsy-driving
+
+(5) https://www.nhtsa.gov/risky-driving/speeding

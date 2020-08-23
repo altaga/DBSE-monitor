@@ -163,7 +163,9 @@ All the demos that we are going to show are executed from a jupyter notebook and
 
 <img src="https://i.ibb.co/sQVStkj/Esquema-3.png" width="1000">
 
-- https://github.com/altaga/Torch-Drowsiness-Monitor/blob/master/Drowsiness/computer.py
+
+
+- https://github.com/altaga/DBSE-monitor/blob/master/Drowsiness/Notebook.ipynb
 
 Video: Click on the image
 [![Torch](https://i.ibb.co/4mx4LPK/Logo.png)](https://youtu.be/9Degq6HjrGE)
@@ -172,7 +174,7 @@ Video: Click on the image
 
 <img src="https://i.ibb.co/Xpd9rs8/Esquema-2.png" width="1000">
 
-- https://github.com/altaga/Torch-Drowsiness-Monitor/blob/master/YoloV3/computer.py
+- https://github.com/altaga/DBSE-monitor/blob/master/YoloV3/Notebook.ipynb
 
 Video: Click on the image
 [![Torch](https://i.ibb.co/4mx4LPK/Logo.png)](https://youtu.be/auCgnU7oglc)
@@ -181,7 +183,7 @@ Video: Click on the image
 
 <img src="https://i.ibb.co/dkfMKh7/Esquema-5.png" width="1000">
 
-- https://github.com/altaga/Torch-Drowsiness-Monitor/blob/master/YoloV3/computer.py
+- https://github.com/altaga/DBSE-monitor/blob/master/Emotion%20detection/Notebook.ipynb
 
 Video: Click on the image
 [![Torch](https://i.ibb.co/4mx4LPK/Logo.png)](https://youtu.be/auCgnU7oglc)

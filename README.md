@@ -109,7 +109,7 @@ https://mosquitto.org/
 
 This is the connection diagram of the system:
 
-<img src="https://i.ibb.co/0DJTFs4/Scheme.png" width="800">
+<img src="https://i.ibb.co/Bqq3p6b/Esquema.png" width="1000">
 
 # Laptop Test:
 

@@ -2,7 +2,7 @@
 
 Drowsines, blind spot and attention monitor for driving or handling heavy machinery. Also detects objects at the blind spot via Computer Vision powered by Pytorch and the Jetson Nano. And has a crash detection feature.
 
-<img src="https://i.ibb.co/1MC19TG/Logo.png" width="1000">
+<img src="https://i.ibb.co/B29Zws0/Logo.png" width="1000">
 
 # Table of contents
 

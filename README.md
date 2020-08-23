@@ -137,26 +137,18 @@ https://pytorch.org/
 <img src="https://i.ibb.co/6RMJp5F/image.png" width="800">
 
     conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
+    
+The other packages we need are the following:
 
-## Support Libraries:
-
-In addition to the aforementioned command, it is necessary to install the following libraries so that the codes can be executed without problem.
-
-- OpenCV
-- pillow
-- requests
-- twilio
-- pygame
-- matplotlib
-- paho-mqtt
-
-Code to install all the libraries:
-
-    pip install opencv-python Pillow requests twilio pygame matplotlib paho-mqtt
+    pip install opencv-python matplotlib tqdm python-vlc Pillow
+    
+Anyway we attach the file requirements.txt where all packages come in our environment.
 
 ## Model Creation:
 
-Inside the "https://github.com/altaga/Torch-Drowsiness-Monitor/tree/master/Drowsiness/Model" folder our model called "BlinkModel.t7" already exists, which is the one I use for all tests, however the model can be trained by yourself with the code called "train.py" in the folder "https://github.com/altaga/Torch-Drowsiness-Monitor/tree/master/Drowsiness".
+Inside the "https://github.com/altaga/DBEmonitor/tree/master/Drowsiness/Model" folder our model called "BlinkModel.t7" already exists, which is the one I use for all tests.
+
+However the model can be trained by yourself with the code called "train.py" in the folder "https://github.com/altaga/DBEmonitor/tree/master/Drowsiness/train".
 
 The database that was used, is a database with 4846 images of left and right eyes, open and closed, where approximately half are open and closed so that the network was able to identify the state of the eyes, the database is in the following folder:
 
@@ -176,7 +168,7 @@ In the first part of the code you can modify the parameters, according to your t
 
 Drowsiness Monitor:
 
-- https://github.com/altaga/Torch-Drowsiness-Monitor/blob/master/Drowsiness/train.py
+- https://github.com/altaga/DBEmonitor/blob/master/Drowsiness/train/train.py
 
 Video: Click on the image
 [![Torch](https://i.ibb.co/1MC19TG/Logo.png)](https://youtu.be/y87Hht7-fkE)

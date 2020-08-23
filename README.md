@@ -1,6 +1,6 @@
 # DBSE-monitor
 
-Drowsiness and attention monitor for driving or handling heavy machinery. Also detects objects at the blind spot via CV and the Jetson Nano. And has a crash detection feature.
+Drowsines, blind spot and attention monitor for driving or handling heavy machinery. Also detects objects at the blind spot via Computer Vision powered by Pytorch and the Jetson Nano. And has a crash detection feature.
 
 <img src="https://i.ibb.co/1MC19TG/Logo.png" width="1000">
 
@@ -119,6 +119,8 @@ https://www.anaconda.com/distribution/
 
 ## Environment Creation:
 
+### Pytorch
+
 First we will create a suitable enviroment for pytorch.
 
     conda create --name pytorch
@@ -135,40 +137,27 @@ https://pytorch.org/
 
     conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
     
+### Dependencies
+    
 The other packages we need are the following:
 
     pip install opencv-python matplotlib tqdm python-vlc Pillow
     
 Anyway we attach the file requirements.txt where all packages come in our environment.
 
-## Model Creation:
+### Jupyter Notebook
 
-Inside the "https://github.com/altaga/DBSE-monitor/tree/master/Drowsiness/Model" folder our model called "BlinkModel.t7" already exists, which is the one I use for all tests.
+Inside the **Drowsiness**, **Emotion detection** and **YoloV3** folders, you will find a file "Notebook.ipynb" which contains the code to run the programs in jupyter notebook, however I attach in each folder a file called "notebook.py" with the code in format **. py **.
 
-However the model can be trained by yourself with the code called "train.py" in the folder "https://github.com/altaga/DBEmonitor/tree/master/DBSE-monitor/train".
+    conda install -c conda-forge notebook
 
-The database that was used, is a database with 4846 images of left and right eyes, open and closed, where approximately half are open and closed so that the network was able to identify the state of the eyes, the database is in the following folder:
+Command to start jupyter notebook
 
-https://github.com/altaga/DBSE-monitor/tree/master/Drowsiness/dataset/dataset_B_Eye_Images
+    jupyter notebook
 
-The training has the following parameters as input.
+## Drowsiness:
 
-- input image shape: (24, 24)
-- validation_ratio: 0.1
-- batch_size: 64
-- epochs: 40
-- learning rate: 0.001
-- loss function: cross entropy loss
-- optimizer: Adam
 
-In the first part of the code you can modify the parameters, according to your training criteria.
-
-Drowsiness Monitor:
-
-- https://github.com/altaga/DBSE-monitor/blob/master/Drowsiness/train/train.py
-
-Video: Click on the image
-[![Torch](https://i.ibb.co/1MC19TG/Logo.png)](https://youtu.be/y87Hht7-fkE)
 
 ## File Changes:
 

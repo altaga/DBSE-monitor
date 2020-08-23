@@ -1,0 +1,71 @@
+argon2-cffi @ file:///C:/ci/argon2-cffi_1596828585465/work
+astroid==2.4.1
+attrs==19.3.0
+autopep8==1.5.4
+backcall==0.2.0
+bleach==3.1.5
+certifi==2020.6.20
+cffi==1.14.0
+colorama==0.4.3
+cycler==0.10.0
+decorator==4.4.2
+defusedxml==0.6.0
+entrypoints==0.3
+importlib-metadata @ file:///C:/ci/importlib-metadata_1593446511143/work
+ipykernel @ file:///C:/ci/ipykernel_1596190155316/work/dist/ipykernel-5.3.4-py3-none-any.whl
+ipython @ file:///C:/ci/ipython_1593447482397/work
+ipython-genutils==0.2.0
+isort==4.3.21
+jedi==0.17.0
+Jinja2==2.11.2
+jsonschema==3.2.0
+jupyter-client @ file:///tmp/build/80754af9/jupyter_client_1594826976318/work
+jupyter-core==4.6.3
+kiwisolver==1.2.0
+lazy-object-proxy==1.4.3
+MarkupSafe==1.1.1
+matplotlib==3.3.1
+mccabe==0.6.1
+mistune==0.8.4
+mkl-fft==1.1.0
+mkl-random==1.1.1
+mkl-service==2.3.0
+nbconvert==5.6.1
+nbformat==5.0.7
+notebook @ file:///C:/ci/notebook_1596840175976/work
+numpy @ file:///C:/ci/numpy_and_numpy_base_1596215850360/work
+olefile==0.46
+opencv-python==4.4.0.42
+packaging==20.4
+pandocfilters==1.4.2
+parso @ file:///tmp/build/80754af9/parso_1596826841367/work
+pickleshare==0.7.5
+Pillow @ file:///C:/ci/pillow_1594298230227/work
+prometheus-client==0.8.0
+prompt-toolkit==3.0.5
+pycodestyle==2.6.0
+pycparser @ file:///tmp/build/80754af9/pycparser_1594388511720/work
+Pygments==2.6.1
+pylint==2.5.2
+pyparsing==2.4.7
+pyrsistent==0.16.0
+python-dateutil==2.8.1
+python-vlc==3.0.11115
+pywin32==227
+pywinpty==0.5.7
+pyzmq==19.0.1
+Send2Trash==1.5.0
+six==1.15.0
+terminado==0.8.3
+testpath==0.4.4
+toml==0.10.1
+torch==1.6.0
+torchvision==0.7.0
+tornado==6.0.4
+tqdm==4.48.2
+traitlets==4.3.3
+wcwidth @ file:///tmp/build/80754af9/wcwidth_1593447189090/work
+webencodings==0.5.1
+wincertstore==0.2
+wrapt==1.12.1
+zipp==3.1.0

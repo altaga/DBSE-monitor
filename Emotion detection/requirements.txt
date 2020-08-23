@@ -1,6 +1,0 @@
-torch>=1.2.0
-matplotlib
-torchsummary
-torchvision
-numpy
-Pillow

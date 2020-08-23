@@ -8,13 +8,16 @@ from PIL import Image
 from torchvision.transforms import ToTensor
 from torch.utils.data import DataLoader
 
+from os.path import dirname, join
+current_dir = dirname(__file__)
+file_path = join(current_dir, "dataset/fer2013.csv")
+
 if not torch.cuda.is_available():
     from torchsummary import summary
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 shape = (44, 44)
-
 
 class DataSetFactory:
 
@@ -26,7 +29,7 @@ class DataSetFactory:
         public_images = []
         public_emotions = []
 
-        with open('../dataset/fer2013.csv', 'r') as csvin:
+        with open(file_path, 'r') as csvin:
             data = csv.reader(csvin)
             next(data)
             for row in data:
@@ -163,7 +166,7 @@ def main():
                     if epoch >= 10:
                         print('saving new model')
                         state = {'net': network.state_dict()}
-                        torch.save(state, '../trained/%s_model_%d_%d.t7' % (name, epoch + 1, accuracy))
+                        torch.save(state, current_dir + '/model/%s_model_%d_%d.t7' % (name, epoch + 1, accuracy))
                     min_validation_loss[name] = total_validation_loss
 
                 print('Epoch [%d/%d] %s validation Loss: %.4f, Accuracy: %.4f' % (

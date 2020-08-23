@@ -1,4 +1,4 @@
-# DBE-Monitor
+# DBSE-monitor
 
 Drowsiness and attention monitor for driving or handling heavy machinery. Also detects objects at the blind spot via CV and the Jetson Nano. And has a crash detection feature.
 

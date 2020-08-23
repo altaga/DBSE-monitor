@@ -2,7 +2,9 @@
 
 To test the code on a computer, previamente debiste seguir las intrucciones de https://github.com/altaga/DBSE-monitor#laptop-test.
 
-Abre el archivo Notebook.ipynb en un jupyter notebook o el archivo Notebook.py en cualquier IDE que permita ejecutar python.
+Open the Notebook.ipynb file in a jupyter notebook or the notebook.py file in any IDE that supports python.
+
+NOTE: It is highly recommended to use jupyter notebook to run this code due to its ease of use.
 
 ## Model Creation:
 

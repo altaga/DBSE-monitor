@@ -155,7 +155,7 @@ Command to start jupyter notebook
 
     jupyter notebook
 
-# Explanation and mini demos:
+# Summary and mini demos:
 
 All the demos that we are going to show are executed from a jupyter notebook and are focused on showing the functionality of the AI models, the demo with the hardware is shown at the end of the repository. [Demo](#epic-demo)
 
@@ -163,9 +163,9 @@ All the demos that we are going to show are executed from a jupyter notebook and
 
 <img src="https://i.ibb.co/sQVStkj/Esquema-3.png" width="1000">
 
+La funcion de esta modelo es realizar una deteccion de distraccion o cerrado de ojos del conductor por mas de 2 segundos o esta distraido del camino (ejemplo, mirando el celular).
 
-
-- https://github.com/altaga/DBSE-monitor/blob/master/Drowsiness/Notebook.ipynb
+Code: https://github.com/altaga/DBSE-monitor/blob/master/Drowsiness/Notebook.ipynb
 
 Video: Click on the image
 [![Torch](https://i.ibb.co/4mx4LPK/Logo.png)](https://youtu.be/9Degq6HjrGE)
@@ -174,7 +174,9 @@ Video: Click on the image
 
 <img src="https://i.ibb.co/Xpd9rs8/Esquema-2.png" width="1000">
 
-- https://github.com/altaga/DBSE-monitor/blob/master/YoloV3/Notebook.ipynb
+La funcion de esta modelo es realizar una deteccion objetos que esten a menos de 3 metros del auto en el punto ciego.
+
+Code: https://github.com/altaga/DBSE-monitor/blob/master/YoloV3/Notebook.ipynb
 
 Video: Click on the image
 [![Torch](https://i.ibb.co/4mx4LPK/Logo.png)](https://youtu.be/auCgnU7oglc)
@@ -183,7 +185,9 @@ Video: Click on the image
 
 <img src="https://i.ibb.co/dkfMKh7/Esquema-5.png" width="1000">
 
-- https://github.com/altaga/DBSE-monitor/blob/master/Emotion%20detection/Notebook.ipynb
+La funcion de esta modelo es detectar las emociones del conductor en todo momento y mediante respuestas musicales (canciones) tratar de corregir el estado mental de el conductor con el fin de mantenerlo neutral o feliz.
+
+Code: https://github.com/altaga/DBSE-monitor/blob/master/Emotion%20detection/Notebook.ipynb
 
 Video: Click on the image
 [![Torch](https://i.ibb.co/4mx4LPK/Logo.png)](https://youtu.be/auCgnU7oglc)

@@ -155,38 +155,36 @@ Command to start jupyter notebook
 
     jupyter notebook
 
-## Drowsiness:
+# Explanation and mini demos:
 
+All the demos that we are going to show are executed from a jupyter notebook and are focused on showing the functionality of the AI models, the demo with the hardware is shown at the end of the repository. [Demo](#epic-demo)
 
+## Drowsiness Monitor:
 
-## File Changes:
-
-The codes to run on the laptop have the following modifications:
-
-- The code segments that involve reading the accelerometer sensor are commented.
-- The MQTT section is commented, instead the MQTT messages are displayed in the python console.
-- The crash notification section is commented because it depends on the Twilio configuration and the use of the accelerometer.
-
-The codes that are executed in the computer are the following and a video of how they are executed in real time with Anaconda Spyder (package that we previously installed):
-
-To open the Spyder IDE write in the anaconda command console:
-    spyder
-
-Drowsiness Monitor:
+<img src="https://i.ibb.co/sQVStkj/Esquema-3.png" width="1000">
 
 - https://github.com/altaga/Torch-Drowsiness-Monitor/blob/master/Drowsiness/computer.py
 
 Video: Click on the image
-[![Torch](https://i.ibb.co/1MC19TG/Logo.png)](https://youtu.be/9Degq6HjrGE)
+[![Torch](https://i.ibb.co/4mx4LPK/Logo.png)](https://youtu.be/9Degq6HjrGE)
 
-YoloV3:
+## Driving Monitor:
+
+<img src="https://i.ibb.co/Xpd9rs8/Esquema-2.png" width="1000">
 
 - https://github.com/altaga/Torch-Drowsiness-Monitor/blob/master/YoloV3/computer.py
 
 Video: Click on the image
-[![Torch](https://i.ibb.co/1MC19TG/Logo.png)](https://youtu.be/auCgnU7oglc)
+[![Torch](https://i.ibb.co/4mx4LPK/Logo.png)](https://youtu.be/auCgnU7oglc)
 
-Since we could check that all the codes work, we can go to the configuration of our hardware to make our product.
+## Emotion Monitor:
+
+<img src="https://i.ibb.co/dkfMKh7/Esquema-5.png" width="1000">
+
+- https://github.com/altaga/Torch-Drowsiness-Monitor/blob/master/YoloV3/computer.py
+
+Video: Click on the image
+[![Torch](https://i.ibb.co/4mx4LPK/Logo.png)](https://youtu.be/auCgnU7oglc)
 
 # Jetson Nano Setup:
 

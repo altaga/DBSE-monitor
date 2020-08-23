@@ -10,7 +10,6 @@ from torch.utils.data import DataLoader
 
 from os.path import dirname, join
 current_dir = dirname(__file__)
-file_path = join(current_dir, "dataset/fer2013.csv")
 
 if not torch.cuda.is_available():
     from torchsummary import summary

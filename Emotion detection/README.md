@@ -1,6 +1,6 @@
 # Laptop Test:
 
-To test the code on a computer, previamente debiste seguir las intrucciones de https://github.com/altaga/DBSE-monitor#laptop-test.
+To test the code on a computer, you should have previously followed the instructions at https://github.com/altaga/DBSE-monitor#laptop-test.
 
 Open the Notebook.ipynb file in a jupyter notebook or the notebook.py file in any IDE that supports python.
 
@@ -15,3 +15,6 @@ The database that was used, is a database with 28710 images of 'Angry','Disgust'
 www.kaggle.com/altaga/emotions
 
 - The model is saved in the train/model folder every 10 epoch.
+
+Example how i train the model with VS code.
+<img src="https://i.ibb.co/nsn5sSy/image.png" width="1000">

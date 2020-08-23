@@ -7,10 +7,12 @@ import glob
 from PIL import Image
 from torchvision.transforms import ToTensor
 from torch.utils.data import DataLoader
-
 import cv2
-face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
-eye_cascade = cv2.CascadeClassifier('haarcascade_eye.xml')
+from os.path import dirname, join
+current_dir = dirname(__file__)
+
+face_cascade = cv2.CascadeClassifier(current_dir+'/haar_models/haarcascade_frontalface_default.xml')
+eye_cascade = cv2.CascadeClassifier(current_dir+'/haar_models/haarcascade_eye.xml')
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
@@ -33,10 +35,10 @@ class DataSetFactory:
         images = []
         labels = []
 
-        files = list(map(lambda x: {'file': x, 'label':1}, glob.glob('dataset/dataset_B_Eye_Images/openRightEyes/*.jpg')))
-        files.extend(list(map(lambda x: {'file': x, 'label':1}, glob.glob('dataset/dataset_B_Eye_Images/openLeftEyes/*.jpg'))))
-        files.extend(list(map(lambda x: {'file': x, 'label':0}, glob.glob('dataset/dataset_B_Eye_Images/closedLeftEyes/*.jpg'))))
-        files.extend(list(map(lambda x: {'file': x, 'label':0}, glob.glob('dataset/dataset_B_Eye_Images/closedRightEyes/*.jpg'))))
+        files = list(map(lambda x: {'file': x, 'label':1}, glob.glob(current_dir+'/dataset/dataset_B_Eye_Images/openRightEyes/*.jpg')))
+        files.extend(list(map(lambda x: {'file': x, 'label':1}, glob.glob(current_dir+'/dataset/dataset_B_Eye_Images/openLeftEyes/*.jpg'))))
+        files.extend(list(map(lambda x: {'file': x, 'label':0}, glob.glob(current_dir+'/dataset/dataset_B_Eye_Images/closedLeftEyes/*.jpg'))))
+        files.extend(list(map(lambda x: {'file': x, 'label':0}, glob.glob(current_dir+'/dataset/dataset_B_Eye_Images/closedRightEyes/*.jpg'))))
         random.shuffle(files)
         for file in files:
             img = cv2.imread(file['file'])
@@ -138,7 +140,7 @@ def main():
                 if epoch >= 10:
                     print('saving new model')
                     state = {'net': network.state_dict()}
-                    torch.save(state, 'Model/model_%d_%d.t7' % (epoch, batch_size))
+                    torch.save(state, current_dir+'/model/model_%d_%d.t7' % (epoch, batch_size))
                     min_validation_loss = total_validation_loss
 
             print('Epoch [%d/%d] validation Loss: %.4f, Accuracy: %.4f' % (

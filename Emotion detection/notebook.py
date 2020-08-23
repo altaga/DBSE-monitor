@@ -10,7 +10,6 @@ import model
 from PIL import Image
 from torchvision import transforms
 from visualize.grad_cam import BackPropagation, GradCAM,GuidedBackPropagation
-from IPython import display
 import threading
 import time
 import vlc

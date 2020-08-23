@@ -8,7 +8,6 @@ from grad_cam import BackPropagation
 import time 
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
-from IPython import display
 import threading
 import vlc
 from os.path import dirname, join

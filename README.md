@@ -1,7 +1,7 @@
 conda install pytorch torchvision cudatoolkit=10.2 -c pytorch
 pip install matplotlib opencv-python paho-mqtt tqdm 
 
-# Torch-Drowsiness-Monitor
+# DBE-Monitor
 
 Drowsiness and attention monitor for driving or handling heavy machinery. Also detects objects at the blind spot via CV and the Jetson Nano. And has a crash detection feature.
 

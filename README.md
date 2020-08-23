@@ -223,7 +223,7 @@ After soldering our circuit looks like so:
 This next video show us how to setup our hardware:
 
 Video: Click on the image
-[![Setup](https://i.ibb.co/1MC19TG/Logo.png)](https://youtu.be/tIUA2fRjauI)
+[![Setup](https://i.ibb.co/4mx4LPK/Logo.png)](https://youtu.be/tIUA2fRjauI)
 
 Curious Fact: The Nvidia Jetson Nano has the same IO pin distribution as a Raspberry Pi, so every shield for the Pi is backwards compatible with the Nano!
 
@@ -523,7 +523,7 @@ Notifications:
 ### Epic DEMO:
 
 Video: Click on the image
-[![Car](https://i.ibb.co/1MC19TG/Logo.png)](https://youtu.be/X51jBfcTQxg)
+[![Car](https://i.ibb.co/4mx4LPK/Logo.png)](https://youtu.be/X51jBfcTQxg)
 
 Sorry github does not allow embed videos.
 

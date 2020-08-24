@@ -7,12 +7,12 @@ Drowsines, blind spot and attention monitor for driving or handling heavy machin
 # Table of contents
 
 * [Introduction](#introduction)
+* [Solution](#solution)
 * [Materials](#materials)
 * [Connection Diagram](#connection-diagram)
 * [Laptop Test](#laptop-test)
+* [Summary and mini demos](#summary-and-mini-demos)
 * [Jetson Setup](#jetson-setup)
-* [Drowsiness Monitor](#drowsiness-monitor)
-* [Blind Spot Monitor](#blind-spot-monitor)
 * [The Final Product](#the-final-product)
 * [Commentary](#commentary)
 * [References](#references)

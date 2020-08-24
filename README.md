@@ -168,7 +168,7 @@ La funcion de esta modelo es realizar una deteccion de distraccion o cerrado de 
 Details: https://github.com/altaga/DBSE-monitor/blob/master/Drowsiness
 
 Video: Click on the image
-[![Torch](https://i.ibb.co/4mx4LPK/Logo.png)](https://youtu.be/9Degq6HjrGE)
+[![Torch](https://i.ibb.co/4mx4LPK/Logo.png)](https://youtu.be/dircJ37T0fs)
 
 ## Driving Monitor:
 
@@ -179,7 +179,7 @@ La funcion de esta modelo es realizar una deteccion objetos que esten a menos de
 Details: https://github.com/altaga/DBSE-monitor/blob/master/YoloV3
 
 Video: Click on the image
-[![Torch](https://i.ibb.co/4mx4LPK/Logo.png)](https://youtu.be/auCgnU7oglc)
+[![Torch](https://i.ibb.co/4mx4LPK/Logo.png)](https://youtu.be/95eDav-Smks)
 
 ## Emotion Monitor:
 
@@ -190,7 +190,7 @@ La funcion de esta modelo es detectar las emociones del conductor en todo moment
 Details: https://github.com/altaga/DBSE-monitor/blob/master/Emotion%20detection
 
 Video: Click on the image
-[![Torch](https://i.ibb.co/4mx4LPK/Logo.png)](https://youtu.be/auCgnU7oglc)
+[![Torch](https://i.ibb.co/4mx4LPK/Logo.png)](https://youtu.be/BWWdUta6gsY)
 
 # Jetson Nano Setup:
 

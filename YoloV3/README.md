@@ -20,6 +20,9 @@ The blind Spot monitor uses the following libraries:
     - Image processing
     - CDNN implementation.
         - The weights of the CDNN were obtained from YoloV3 and imported by PyTorch.
+
+Only for Jetson Nano:
+
 - MQTT with Mosquitto: 
     - Communication with the ESP32.
 

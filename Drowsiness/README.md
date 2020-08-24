@@ -35,15 +35,7 @@ Example how i train the model with VS code.
 
 Let's go through a revision of the algorithms and procedures of both CV systems (Drowsiness and alert on one side and Blind spot detection on the other). The installation is remarkably easy as I have already provided an image for the project.
 
-ALL the code is well explained in the respective Github file: https://github.com/altaga/Torch-Drowsiness-Monitor
-
-Look for the two Python files: Drowsiness and Yolo:
-
-https://github.com/altaga/Torch-Drowsiness-Monitor/blob/master/Drowsiness/check.py
-
-https://github.com/altaga/Torch-Drowsiness-Monitor/blob/master/YoloV3/detect.py
-
-Those are the two that make all the magic happen.
+ALL the code is well explained in "Notebook.ipynb" file.
 
 Please take a look at it for extensive explanation and documentation.
 
@@ -54,8 +46,11 @@ The sleep monitor uses the following libraries:
     - (OpenCV) Haarcascades implementation. 
     - (OpenCV) Blink eye speed detection.
     - (Pytorch) Eye Status (Open / Close)
-- Pygame: 
+- VLC: 
     - Player sound alert.
+
+Only in Jetson Nano:
+
 - Smbus:
     - Accelerometer reading.
 - Twilio:

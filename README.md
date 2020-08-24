@@ -165,7 +165,7 @@ La funcion de esta modelo es realizar una deteccion de distraccion o cerrado de 
 
 <img src="https://i.ibb.co/sQVStkj/Esquema-3.png" width="1000">
 
-Code: https://github.com/altaga/DBSE-monitor/blob/master/Drowsiness/Notebook.ipynb
+Details: https://github.com/altaga/DBSE-monitor/blob/master/Drowsiness
 
 Video: Click on the image
 [![Torch](https://i.ibb.co/4mx4LPK/Logo.png)](https://youtu.be/9Degq6HjrGE)
@@ -176,7 +176,7 @@ La funcion de esta modelo es realizar una deteccion objetos que esten a menos de
 
 <img src="https://i.ibb.co/Xpd9rs8/Esquema-2.png" width="1000">
 
-Code: https://github.com/altaga/DBSE-monitor/blob/master/YoloV3/Notebook.ipynb
+Details: https://github.com/altaga/DBSE-monitor/blob/master/YoloV3
 
 Video: Click on the image
 [![Torch](https://i.ibb.co/4mx4LPK/Logo.png)](https://youtu.be/auCgnU7oglc)
@@ -187,7 +187,7 @@ La funcion de esta modelo es detectar las emociones del conductor en todo moment
 
 <img src="https://i.ibb.co/dkfMKh7/Esquema-5.png" width="1000">
 
-Code: https://github.com/altaga/DBSE-monitor/blob/master/Emotion%20detection/Notebook.ipynb
+Details: https://github.com/altaga/DBSE-monitor/blob/master/Emotion%20detection
 
 Video: Click on the image
 [![Torch](https://i.ibb.co/4mx4LPK/Logo.png)](https://youtu.be/auCgnU7oglc)

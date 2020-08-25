@@ -2,6 +2,10 @@
 
 To test the code on a computer, you should have previously followed the instructions at https://github.com/altaga/DBSE-monitor#laptop-test.
 
+You must download the model from the link below and put it inside the weights folder for the code to work
+
+https://pjreddie.com/media/files/yolov3-tiny.weights
+
 Open the Notebook.ipynb file in a jupyter notebook or the notebook.py file in any IDE that supports python.
 
 NOTE: It is highly recommended to use jupyter notebook to run this code due to its ease of use.

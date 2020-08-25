@@ -1,10 +1,14 @@
 # Jetson Nano Setup:
 
+You must download the model from the link below and put it inside the YoloV3/weights folder for the code to work
+
+https://pjreddie.com/media/files/yolov3-tiny.weights
+
 ## SD card Setup:
 
-To download the operating system of the Jetson Nano enter the following link:
+In this case we use an OS that already has the pytorch library and jupyter lab installed to facilitate the use of the jetson.
 
-https://developer.nvidia.com/jetson-nano-sd-card-image
+https://github.com/NVIDIA-AI-IOT/jetbot/wiki/software-setup
 
 Format the SD card with SD Card Formatter and Flash the operating system in the SD with Etcher.
 
@@ -29,7 +33,7 @@ After soldering our circuit looks like so:
 This next video show us how to setup our hardware:
 
 Video: Click on the image
-[![Setup](https://i.ibb.co/4mx4LPK/Logo.png)](https://youtu.be/tIUA2fRjauI)
+[![Setup](https://i.ibb.co/4mx4LPK/Logo.png)](https://youtu.be/I8z-k-uc0fk)
 
 Curious Fact: The Nvidia Jetson Nano has the same IO pin distribution as a Raspberry Pi, so every shield for the Pi is backwards compatible with the Nano!
 
@@ -55,17 +59,17 @@ IP: 192.168.43.246
 
 ## Software Setup:
 
-We need to access our jetson from any command terminal via SSH, in the case of MAC and Linux just open the terminal and type the following command.
+We need to access our jetson from any browser.
 
-    ssh youruser@yourip
+    jetson_ip:8888
 
 The command that I use in MY case is:
 
-    ssh alex@192.168.0.23
+    192.168.0.23:8888
 
-In Window's case you can access it from any SSH connection assistant such as Putty.
+Password:jetbot
 
-https://www.putty.org/
+<img src="https://i.ibb.co/93HBrXd/image.png" width="1000">
 
 ## Twilio Setup
 
@@ -131,6 +135,10 @@ Una vez instalado el mqtt server este iniciara en el boot de la board.
 
 ## Support Libraries Setup:
 
+- Pytorch (Preinstalled)
+
+Los paquetes que vamos a necesitar para hacer funcionar el sistema seran los siguientes.
+
 - OpenCV
 - pillow
 - torchvision
@@ -142,26 +150,16 @@ Una vez instalado el mqtt server este iniciara en el boot de la board.
 
 Code to install all the libraries:
 
-    pip install opencv-python Pillow torchvision requests twilio pygame matplotlib paho-mqtt smbus 
+    sudo apt-get install python-opencv
+    sudo pip3 install opencv-python Pillow torchvision requests twilio matplotlib paho-mqtt smbus python-vlc
 
-## Setup boot start scripts
+Password:jetbot
 
-In order for both files to run at the same time on the device's boot, we must run the following commands to create an rc.local file and give it the permission to run both scripts.
+## Download the project:
 
-    sudo apt-get update
-    sudo apt-get install nano
-    sudo mv "Torch-Drowsiness-Monitor/Config File/rc.local" /etc/rc.local
-    sudo chmod u+x /etc/rc.local
+To download the project in the jetson we must execute the following command
 
-The rc.local content is:
-
-    #!/bin/bash
-
-    sleep 10
-
-    sudo python3 "Torch-Drowsiness-Monitor/YoloV3/detect.py" &
-    sudo python3 "Torch-Drowsiness-Monitor/Drowsiness/check.py" &
-
+    git clone https://github.com/altaga/DBSE-monitor
 
 # ESP32 Setup
 

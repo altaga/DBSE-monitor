@@ -11,6 +11,27 @@ import matplotlib.image as mpimg
 import threading
 import vlc
 from os.path import dirname, join
+from twilio.rest import Client
+import urllib.request
+import smbus
+import json
+
+class MMA7455():
+    bus = smbus.SMBus(1)
+    def __init__(self):
+        self.bus.write_byte_data(0x1D, 0x16, 0x55) # Setup the Mode
+        self.bus.write_byte_data(0x1D, 0x10, 0) # Calibrate
+        self.bus.write_byte_data(0x1D, 0x11, 0) # Calibrate
+        self.bus.write_byte_data(0x1D, 0x12, 0) # Calibrate
+        self.bus.write_byte_data(0x1D, 0x13, 0) # Calibrate
+        self.bus.write_byte_data(0x1D, 0x14, 0) # Calibrate
+        self.bus.write_byte_data(0x1D, 0x15, 0) # Calibrate
+    def getValueX(self):
+        return self.bus.read_byte_data(0x1D, 0x06)
+    def getValueY(self):
+        return self.bus.read_byte_data(0x1D, 0x07)
+    def getValueZ(self):
+        return self.bus.read_byte_data(0x1D, 0x08)
 
 current_dir = dirname(__file__)
 
@@ -36,6 +57,53 @@ classes = [
 
 eyess=[]
 cface=0
+
+sens=30
+
+mma = MMA7455()
+
+# Obtaining the X, Y and Z values.
+
+xmem=mma.getValueX()
+ymem=mma.getValueY()
+zmem=mma.getValueZ()
+x = mma.getValueX()
+y = mma.getValueY()
+z = mma.getValueZ()
+
+# Creating the base accelerometer values.
+
+if(xmem > 127):
+    xmem=xmem-255
+if(ymem > 127):
+    ymem=ymem-255
+if(zmem > 127):
+    zmem=zmem-255
+if(x > 127):
+    x=x-255
+if(y > 127):
+    y=y-255
+if(z > 127):
+    z=z-255
+
+def send():
+    # Your Account SID from twilio.com/console
+    account_sid = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    # Your Auth Token from twilio.com/console
+    auth_token  = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+    client = Client(account_sid, auth_token)
+    phone = "+XXXXXXXXXXXX"
+    print('crash')
+    send_url = 'http://ip-api.com/json'
+    r = requests.get(send_url)
+    j = json.loads(r.text)
+    text="The Driver Crash Here: "
+    text+="http://maps.google.com/maps?q=loc:{},{}".format(j['lat'],j['lon'])
+    print(text)
+    message = client.messages.create(to=phone, from_="++XXXXXXXXXXXX",body=text)
+    print(message.sid)
+    time.sleep(10)
+    stop()
         
 def preprocess(image_path):
     global cface
@@ -154,12 +222,22 @@ def main():
         cv2.imwrite(current_dir+'/temp-images/img.jpg',img) 
         func(current_dir+'/temp-images/img.jpg',MyModel)
     
-def disp():
+def readAccel():
     while 1:
         try:
-            img = cv2.imread(current_dir+'/temp-images/display.jpg')
-            cv2.imshow(current_dir+'/temp-images/image',img)
-            k = cv2.waitKey(30) & 0xff
+            x = mma.getValueX()
+            y = mma.getValueY()
+            z = mma.getValueZ()
+            if(x > 127):
+                x=x-255
+            if(y > 127):
+                y=y-255
+            if(z > 127):
+                z=z-255
+            # Send sms if crash
+            if(abs(xmem-x)>sens or abs(ymem-y)>sens or abs(zmem-z)>sens):
+                send()
+                print('Crash')
         except:
             ...
 
@@ -169,8 +247,8 @@ timebasedis= time.time()
 timerundrow= time.time()
 timerundis= time.time()
         
-d = threading.Thread(target=disp, name='disp')
+r = threading.Thread(target=readAccel, name='readAccel')
 m = threading.Thread(target=main, name='main')
 
-d.start()
+r.start()
 m.start()

@@ -12,6 +12,16 @@ import math
 import matplotlib.pyplot as plt
 import matplotlib.image as mpimg
 from os.path import dirname, join
+import paho.mqtt.client as paho
+
+objects=[240,220,120,50] #person:70, cars:220, motorcycle:120, dogs:50
+mqttc = paho.Client()
+mqttc.on_connect = on_connect
+mqttc.on_message = on_message
+mqttc.on_publish = on_publish
+mqttc.on_subscribe = on_subscribe
+mqttc.connect("localhost", 1883, keepalive=60)
+rc = 0
 
 current_dir = dirname(__file__)
 
@@ -27,6 +37,23 @@ model.eval()  # Set in evaluation mode
 classes = load_classes(current_dir+"/data/coco.names")  # Extracts class labels from file
 
 video_capture = cv2.VideoCapture(0)
+
+def on_connect(client, userdata, flags, rc):
+    print("Connection returned result: " + str(rc) )
+    #client.subscribe("#" , 1 ) # Wild Card
+
+# This function trigger every time we receive a message from the platform
+def on_message(client, userdata, msg):
+    print("topic: "+msg.topic)
+    print("payload: "+str(msg.payload))
+    
+# This function trigger when we publish  
+def on_publish(client, obj, mid):
+    print("mid: " + str(mid))
+    
+# This function trigger when we subscribe to a new topic  
+def on_subscribe(client, obj, mid, granted_qos):
+    print("Subscribed: " + str(mid) + " " + str(granted_qos))
 
 while 1:
     ret, frame = video_capture.read()
@@ -118,6 +145,7 @@ while 1:
                 # Create a Rectangle patch
                 cv2.rectangle(imag, (int(x1), int(y1)), (int(x2), int(y2)), color, 2)
                 cv2.putText(imag, classes[int(cls_pred)]+add,(int(x1), int(y1)-20), cv2.FONT_HERSHEY_SIMPLEX, 1, color, 2, cv2.LINE_AA)
+    mqttc.publish('inTopic', labelmod)
     img = imag
     scale_percent = 100 # percent of original size
     width = int(img.shape[1] * scale_percent / 100)

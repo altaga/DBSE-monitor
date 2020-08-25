@@ -4,7 +4,7 @@ To test the code on a computer, you should have previously followed the instruct
 
 You must download the model from the link below and put it inside the weights folder for the code to work
 
-https://pjreddie.com/media/files/yolov3-tiny.weights
+https://pjreddie.com/media/files/yolov3.weights
 
 Open the Notebook.ipynb file in a jupyter notebook or the notebook.py file in any IDE that supports python.
 

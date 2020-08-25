@@ -2,7 +2,7 @@
 
 You must download the model from the link below and put it inside the YoloV3/weights folder for the code to work
 
-https://pjreddie.com/media/files/yolov3-tiny.weights
+https://pjreddie.com/media/files/yolov3.weights
 
 ## SD card Setup:
 

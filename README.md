@@ -29,7 +29,7 @@ According to a report by the WHO (World Health Organization) (2), falling asleep
 
 <img src="https://media2.giphy.com/media/PtrhzZJhbEBm8/giphy.gif" width="1000">
 
-A su vez la NHTSA menciona que el hecho de estar enojado puede generar una conduccion mas peligrosa y agresiva (5), poniendo en peligro la vida del conductor debido a estas alteraciones psicologicas.
+Also, the NHTSA mentions that being angry or in an altered state of mind can lead to more dangerous and aggressive driving (5), endangering the life of the driver due to these psychological disorders.
 
 <img src="https://i.ibb.co/YcWYJNw/tenor-1.gif" width="1000">
 
@@ -161,7 +161,7 @@ All the demos that we are going to show are executed from a jupyter notebook and
 
 ## Drowsiness Monitor:
 
-La funcion de esta modelo es realizar una deteccion de distraccion o cerrado de ojos del conductor por mas de 2 segundos o esta distraido del camino (ejemplo, mirando el celular).
+The function of this model is to make a detection of distraction or closed eyes of the driver for more than 2 seconds or he is distracted from the road (for example, looking at the cell phone).
 
 <img src="https://i.ibb.co/sQVStkj/Esquema-3.png" width="1000">
 
@@ -172,7 +172,7 @@ Video: Click on the image
 
 ## Driving Monitor:
 
-La funcion de esta modelo es realizar una deteccion objetos que esten a menos de 3 metros del auto en el punto ciego.
+The function of this model is to detect objects that are less than 3 meters from the car at the blind spot.
 
 <img src="https://i.ibb.co/Xpd9rs8/Esquema-2.png" width="1000">
 
@@ -183,7 +183,7 @@ Video: Click on the image
 
 ## Emotion Monitor:
 
-La funcion de esta modelo es detectar las emociones del conductor en todo momento y mediante respuestas musicales (canciones) tratar de corregir el estado mental de el conductor con el fin de mantenerlo neutral o feliz.
+The function of this model is to detect the driver's emotions at all times and through musical responses (songs) try to correct the driver's mental state, in order to keep him neutral or in a good mood while driving, thus reducing the risk of accidents.
 
 <img src="https://i.ibb.co/dkfMKh7/Esquema-5.png" width="1000">
 

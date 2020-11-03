@@ -47,7 +47,7 @@ Additionally it will detect small vehicles and motorcycles in the automobile’s
 
 In turn, the system will have an accelerometer to generate a call to the emergency services if the car had an accident to be able to attend the emergency quickly.
 
-Debido a que un estado psicologico alterado podria generar una posible conduccion peligrosa, cuidamos el estado de el conductor mediante el analisis de emociones de su rostro y utilizando musica que al conductor le pueda genera una respuesta positiva.
+Because an altered psychological state could generate a possible dangerous driving, we take care of the state of the driver by analyzing the emotions of his face and using music that can generate a positive response to the driver.
 
 <img src="https://i.ibb.co/xX4G7Yd/dondraper-car.gif" width="1000">
 
@@ -197,7 +197,6 @@ Video: Click on the image
 The setup process to run everything on the jetson nano are in this folder:
 
 https://github.com/altaga/DBSE-monitor/tree/master/Jetson
-
 
 # The Final Product:
 

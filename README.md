@@ -6,16 +6,26 @@ Drowsines, blind spot and attention monitor for driving or handling heavy machin
 
 # Table of contents
 
-* [Introduction](#introduction)
-* [Solution](#solution)
-* [Materials](#materials)
-* [Connection Diagram](#connection-diagram)
-* [Laptop Test](#laptop-test)
-* [Summary and mini demos](#summary-and-mini-demos)
-* [Jetson Setup](#jetson-setup)
-* [The Final Product](#the-final-product)
-* [Commentary](#commentary)
-* [References](#references)
+- [DBSE-monitor](#dbse-monitor)
+- [Table of contents](#table-of-contents)
+- [Introduction:](#introduction)
+- [Solution:](#solution)
+- [Materials:](#materials)
+- [Connection Diagram:](#connection-diagram)
+- [Laptop Test:](#laptop-test)
+  - [Environment Creation:](#environment-creation)
+    - [Pytorch](#pytorch)
+    - [Dependencies](#dependencies)
+    - [Jupyter Notebook](#jupyter-notebook)
+- [Summary and mini demos:](#summary-and-mini-demos)
+  - [Drowsiness Monitor:](#drowsiness-monitor)
+  - [Driving Monitor:](#driving-monitor)
+  - [Emotion Monitor:](#emotion-monitor)
+- [Jetson Nano Setup:](#jetson-nano-setup)
+- [The Final Product:](#the-final-product)
+    - [Epic DEMO:](#epic-demo)
+- [Commentary:](#commentary)
+  - [References:](#references)
 
 # Introduction:
 

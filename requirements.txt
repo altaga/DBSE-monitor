@@ -17,7 +17,7 @@ ipython @ file:///C:/ci/ipython_1593447482397/work
 ipython-genutils==0.2.0
 isort==4.3.21
 jedi==0.17.0
-Jinja2==2.11.2
+Jinja2==2.11.3
 jsonschema==3.2.0
 jupyter-client @ file:///tmp/build/80754af9/jupyter_client_1594826976318/work
 jupyter-core==4.6.3

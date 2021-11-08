@@ -17,7 +17,7 @@ from random import seed,random, randint
 import pickle
 from os.path import dirname, join
 
-current_dir = dirname(__file__)
+current_dir = os.path.dirname(os.path.realpath(__file__))
 
 # Check CUDA availability 
 torch.cuda.is_available()
